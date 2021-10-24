@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Anketa</title>
+    <link rel="stylesheet" type="text/css" href="stylep.css">
+</head>
+
+<body style="font-size: large;">
+    
+    <div class="home">
+        <h1>Give me your feedback!</h1>
+        <div class="menu"> 
+            <a href="homepage.html">Home</a>
+            <a href="gallery.html">My Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="#Contact" >Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <div class="dropdown" style="position: absolute;margin-left: 12cm;margin-top: 1.75%;">
+                 <button class="dropbtn">
+                    <a href="homepage.html#favourite" style="font-size: large; border: none;">Favourites</a>
+                    
+                    <div class="dropdown-content">
+                        <a href="music.html" style="border: none;">Music</a>
+                        <a href="food.html" style="border: none;">Food</a>
+                        <a href="movies.html" style="border: none;">Movies</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section  style="padding-left: 2%; padding-right: 2%;  margin-top: 2%;">
+     <div autocomplete="on">
+       <section class="feedbackpr" >
+       <div id="bod">
+        <p class="feedback">Your name: <br>
+            <input required type="text" name="name" placeholder="Name" autofocus autocomplete="on" required>
+        </p>
+        <p class="feedback">Your Last name: <br>
+            <input required type="text" name="name" placeholder="Last Name" autofocus autocomplete="on" required>
+        </p>
+        <p class="feedback">
+            <label>Say something about my blog: <br>
+                <textarea rows="10" cols="30"  name="name" type="text" size="35" placeholder="Your comment:"></textarea></label>
+
+        </p>
+        <p class="feedback">
+            Things you liked:<br>
+             Blog<input style="padding-left: 1cm; font-weight: normal" type="checkbox" name="Things you liked">
+             My Gallery<input style="padding-left: 1cm; font-weight: normal" type="checkbox" name="Things you liked">
+             Favourites<input style="padding-left: 1cm; font-weight: normal" type="checkbox" name="Things you liked">
+
+        </p>
+         <p class="feedback">
+            How often do you visit my site?<br>
+            <input type="text" name="lastime" list="lasttime" placeholder="It's my first time">
+            <datalist id="lasttime">
+                <option value="Once a day"></option>
+                <option value="Once a week"></option>
+                <option value="Once a month"></option>
+                <option value="It's my first time"></option>
+            </datalist>
+         </p>
+         <p class="feedback">
+            Rate my site: <input type="number" max=10 min=1 step="=1">(1-10)
+         </p>
+         <p class="feedback">
+            Your phone number: <br> <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="###-###-###">
+         </p>
+         <p class="feedback">
+             Your favourite category of my blog:<br>
+              Politics<input type="radio" name="blog" checked>
+              Travel<input type="radio" name="blog">
+              Sport<input type="radio" name="blog">
+         </p>
+         <p class="feedback">Rate your favourite category: <br>0
+            <input name="blog" type="range" min="1" max="10" step="1" value=""> 10
+         </p>
+        </div>
+         <p class="feedback">
+             Date:<br>
+            <input type="datetime-local">
+            <section>
+               <button>Submit</button></a> 
+               <input name="Clear" type="reset">
+            </section>
+         </p>
+        </section>
+    </div>     
+     </section>
+    
+    <div id="Contact" style="background-color: rgb(0, 78, 141);height:5cm; position: relative; top:1cm" class="insta">
+        <div>
+            <a href="tel:076254654" style="color: white;font-size: 150%; position: relative; top:1.5cm;left:2cm">Phone number: (+389 76 254 654)</a>
+        </div>
+        <div>
+            <a href="mailto:stefan.joveski@gmail.com" style="color: white;font-size: 150%; position: relative; top:2cm;left:2cm">E-mail: stefan.joveski@gmail.com</a>
+        </div>
+        <div>
+        
+        <a style="float: right;" href="https://www.facebook.com/stefan.joveski.7/" ><img class="contact" src="./images/fb.jpg" alt="fb"></a>
+        <a style="float: right; margin-right: 1cm;" href="https://www.instagram.com/stefaanj/" ><img class="contact" src="./images/ig.jpg" alt="fb"></a>
+        <p style="float: right; color:white; padding:0.2cm;font-size: 150%; position: relative; text-align: right;">
+            Find me on:
+        </p>
+        
+        </div>
+
+    </div>
+
+</body>
+</html>
