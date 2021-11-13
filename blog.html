@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Blog</title>
         <link rel="stylesheet" type="text/css" href="stylep.css">
+        <script src="javascript.js"></script>
     </head>
     <body>
         <div class="home">
@@ -26,6 +27,7 @@
                     </button>
                 </div>
             </div>
+            <div id="clock" style="float: right; color: white; font-weight: bolder;text-align: center; font-size: 120%;"></div>
         </div>
         
         <ul class="horizontal"><p><strong>Jump to:</strong></p>
@@ -61,9 +63,15 @@
                  </p>
                 
                 </div>
-                <p  style="font-size: larger;font-weight: bolder; padding-left: 5%;">Share your thoughts on this topic</p>
-                <textarea placeholder="Say something about this topic" id="textarea" style=" width: 70%; margin-left: 5%;"></textarea>
-                <button class="blogbtn" type="button">Post</button>
+                <div id="novpost"></div>
+                <p style="color: black; font-size: larger;font-weight: bolder; padding-left: 5%;">
+                    Share your topic here:
+                </p>
+                <p style="font-size: larger;font-weight: bolder; padding-left: 5%;">Title</p>
+                <input id="naslov" type="text" name="name" placeholder="Title" style="width: 60%; margin-left: 5%;" required>
+                <p  style="font-size: larger;font-weight: bolder; padding-left: 5%;">Content</p>
+                <textarea placeholder="Your Blog here:" id="textarea" style=" width: 70%; margin-left: 5%;"></textarea>
+                <button class="blogbtn" type="button" onclick="myFunction('novpost','naslov','textarea')">Post</button>
         </div>
         
         <div>
@@ -109,12 +117,17 @@
                     </p>
                    
                 </div>
-
-                <p  style="font-size: larger;font-weight: bolder; padding-left: 5%;">Share your thoughts on this topic</p>
-                <textarea placeholder="Say something about this topic" id="textarea" style=" width: 70%; margin-left: 5%;"></textarea>
-                <button class="blogbtn" type="button">Post</button>
+                <div id="novpostt"></div>
+                <p style="color: black; font-size: larger;font-weight: bolder; padding-left: 5%;">
+                    Share your topic here:
+                </p>
+                <p style="font-size: larger;font-weight: bolder; padding-left: 5%;">Title</p>
+                <input id="naslovt" type="text" name="name" placeholder="Title" style="width: 60%; margin-left: 5%;" required>
+                <p  style="font-size: larger;font-weight: bolder; padding-left: 5%;">Content</p>
+                <textarea placeholder="Your Blog here:" id="textareat" style=" width: 70%; margin-left: 5%;"></textarea>
+                <button class="blogbtn" type="button" onclick="myFunction('novpostt','naslovt','textareat')">Post</button>
         </div>
-
+ 
         <div>
             <p id="sp" class="movies" style="overflow: hidden;">Sport</p>
                 <div style=" overflow: hidden;">
@@ -141,9 +154,15 @@
                  </p>
                 
                 </div>
-                <p  style="font-size: larger;font-weight: bolder; padding-left: 5%;">Share your thoughts on this topic</p>
-                <textarea placeholder="Say something about this topic" id="textarea" style=" width: 70%; margin-left: 5%;"></textarea>
-                <button class="blogbtn" type="button">Post</button>
+                <div id="novposttt"></div>
+                <p style="color: black; font-size: larger;font-weight: bolder; padding-left: 5%;">
+                    Share your topic here:
+                </p>
+                <p style="font-size: larger;font-weight: bolder; padding-left: 5%;">Title</p>
+                <input id="naslovtt" type="text" name="name" placeholder="Title" style="width: 60%; margin-left: 5%;" required>
+                <p  style="font-size: larger;font-weight: bolder; padding-left: 5%;">Content</p>
+                <textarea placeholder="Your Blog here:" id="textareatt" style=" width: 70%; margin-left: 5%;"></textarea>
+                <button class="blogbtn" type="button" onclick="myFunction('novposttt','naslovtt','textareatt')">Post</button>
         </div>
 
         <div id="Contact" style="background-color: rgb(0, 78, 141);height:5cm; position: relative; top:1cm" class="insta">

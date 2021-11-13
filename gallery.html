@@ -4,9 +4,12 @@
         <meta charset="utf-8">
         <title>Gallery</title>
         <link rel="stylesheet" type="text/css" href="stylep.css"> 
+        <script src="javascript.js"></script>
+        <script src="commentss.js"></script>
+        <script src="delete.js"></script>
     </head>
 
-    <body>
+    <body onload="myGallery()">
         <div class="home">
             <h1>This is my gallery!</h1>
             <div class="menu"> 
@@ -27,27 +30,37 @@
                     </button>
                 </div>
             </div>
+            <div id="clock" style="float: right; color: white; font-weight: bolder;text-align: center; font-size: 120%;"></div>
         </div>
     
         <div style="padding-left:30%">
             <div class="forma" style="width:10cm; height: auto; box-shadow: black; padding:5%; margin: 2%;">
                 <img name="prva" src="./images/slika0.jpg" alt="Slika1" style="height: 8cm; width: 6.5cm;padding: 0%;margin-left: 0%;">
-                
+                <div style="width: 8cm;margin-left: 0%;">
+                    <button type="button" style="width: 1.5cm;height: 1.5cm;" class="contact" onclick="funk('like0',0)">
+                    <img src="./images/like.png" style="width: 1cm;height: 1cm;" alt="like">
+                    </button>
+                    <span id="like0"></span>
+                 </div>
                 <details style=" width: 8cm; margin-left: 0%; padding: 0%; overflow: hidden; align-content: center;">
                    <summary style="width: 10cm; overflow: hidden;">All comments:</summary>
                    <ul id="kade1"></ul>
-              
                 </details>
                 <div>
                   <input id="kom1" style="height:0.5cm;width:8cm;float: left;"required type="text" name="name" placeholder="Comment something:" autocomplete="on">
-                  <button class="gallerybtn" style="float: left; overflow: hidden;"  type="button">Post</button>  
+                  <button class="gallerybtn" style="float: left; overflow: hidden;"  type="button" onclick="loadKom('kade1','kom1', 1)">Post</button>  
         
                 </div>
             </div>
             
             <div class="forma" style="width:10cm; height: auto; box-shadow: black; padding:5%; margin: 2%;">
-                <img name="prva" src="./images/slika1.jpg" alt="Slika2" style="height: 8cm; width: 6.5cm;padding: 0%;margin-left: 0%;">
-                
+                <img name="vtora" src="./images/slika1.jpg" alt="Slika2" style="height: 8cm; width: 6.5cm;padding: 0%;margin-left: 0%;">
+                <div style="width: 8cm;margin-left: 0%;">
+                    <button type="button" style="width: 1.5cm;height: 1.5cm;" class="contact" onclick="funk('like1',1)">
+                     <img src="./images/like.png" style="width: 1cm;height: 1cm;" alt="like">
+                    </button>
+                    <span id="like1"></span>
+                </div>
                 <details style=" width: 8cm; margin-left: 0%; padding: 0%; overflow: hidden; align-content: center;">
                    <summary style="width: 10cm; overflow: hidden;">All comments:</summary>
                    <ul id="kade2"></ul>
@@ -55,14 +68,19 @@
                 </details>
                 <div>
                   <input id="kom2" style="height:0.5cm;width:8cm;float: left;"required type="text" name="name" placeholder="Comment something:" autocomplete="on">
-                  <button class="gallerybtn" style="float: left; overflow: hidden;"  type="button">Post</button>  
+                  <button class="gallerybtn" style="float: left; overflow: hidden;"  type="button" onclick="loadKom('kade2', 'kom2', 2)">Post</button>  
         
                 </div>
             </div>
             
             <div class="forma" style="width:10cm; height: auto; box-shadow: black; padding:5%; margin: 2%;">
-                <img name="prva" src="./images/slika2.jpg" alt="Slika3" style="height: 6cm; width: 8cm;padding: 0%;margin-left: 0%;">
-                
+                <img name="treta" src="./images/slika2.jpg" alt="Slika3" style="height: 6cm; width: 8cm;padding: 0%;margin-left: 0%;">
+                <div style="width: 8cm;margin-left: 0%;">
+                    <button type="button" style="width: 1.5cm;height: 1.5cm;" class="contact" onclick="funk('like2',1)">
+                     <img src="./images/like.png" style="width: 1cm;height: 1cm;" alt="like">
+                    </button>
+                    <span id="like2"></span>
+                </div>
                 <details style=" width: 8cm; margin-left: 0%; padding: 0%; overflow: hidden; align-content: center;">
                    <summary style="width: 10cm; overflow: hidden;">All comments:</summary>
                    <ul id="kade3"></ul>
@@ -70,11 +88,11 @@
                 </details>
                 <div>
                   <input id="kom3" style="height:0.5cm;width:8cm;float: left;"required type="text" name="name" placeholder="Comment something:" autocomplete="on">
-                  <button class="gallerybtn" style="float: left; overflow: hidden;"  type="button">Post</button>  
+                  <button class="gallerybtn" style="float: left; overflow: hidden;"  type="button" onclick="loadKom('kade3', 'kom3', 2)">Post</button>  
         
                 </div>
             </div>
-           
+            <div id="output2"></div>
        
        
             </div>

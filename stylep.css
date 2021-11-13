@@ -207,7 +207,7 @@ nav {background-color:rgb(0, 78, 141) ;width:6cm; text-align: center;font-size: 
 nav ul {display: none;}
 nav:hover ul {display: block; height: 3cm;overflow: scroll; font-size: 70%;}
 nav:hover{color: rgb(255, 255, 255); background-color: rgb(95, 152, 199);}
-li {color: white; background-color:black;}
+li {color: white; background-color: rgb(0, 78, 141);}
 li a{color:white; font-size: 70%;}
 li:hover {color: rgb(0, 78, 141); background-color:rgb(151, 208, 255);}
 nav ul li nav{ font-size: 110%;color: white;}
