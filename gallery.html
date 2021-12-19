@@ -6,7 +6,25 @@
         <link rel="stylesheet" type="text/css" href="stylep.css"> 
         <script src="javascript.js"></script>
         <script src="commentss.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="delete.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#kade1").on("click", 'li' ,function(){
+              $(this).hide();
+            });
+          });
+          $(document).ready(function(){
+            $("#kade2").on("click", 'li' ,function(){
+              $(this).hide();
+            });
+          });
+          $(document).ready(function(){
+            $("#kade3").on("click", 'li' ,function(){
+              $(this).hide();
+            });
+          });
+        </script>
     </head>
 
     <body onload="myGallery()">

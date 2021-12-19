@@ -4,8 +4,3 @@ function izbrisi(kade){
    loadKom(kade);
 }
 
-$(document).ready(function(){
-    $(".del").on("click", function(){
-      $(this).hide();
-    });
-});

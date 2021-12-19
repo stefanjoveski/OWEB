@@ -5,6 +5,25 @@
         <title>Blog</title>
         <link rel="stylesheet" type="text/css" href="stylep.css">
         <script src="javascript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+            var pom=0
+            $(document).ready(function(){
+            
+                $("#flip").click(function(){
+            
+                if(pom==0){
+                $("#flip").find(".panel1").slideDown("slow");
+                pom=1;}
+                else
+                {$("#flip").find(".panel1").slideUp("slow");
+                pom=0;}
+                });
+            
+             
+            });
+            
+        </script>
     </head>
     <body>
         <div class="home">
@@ -76,47 +95,60 @@
         
         <div>
             <p id="tr" class="movies" style="overflow: hidden;">Travel</p>
-                <div style=" overflow: hidden;">
-                 <p style="color:rgb(0, 78, 141); font-size: larger;font-weight: bolder; padding-left: 5%;">
-                    MILAN
-                 </p>
-                 <p style="color: black;font-size: larger;padding-left: 5%;">
-                    Milan is a city in northern Italy, capital of Lombardy, and the second-most populous city proper in Italy after Rome. 
-                    Milan served as the capital of the Western Roman Empire, the Duchy of Milan and the Kingdom of Lombardy–Venetia. 
-                    The city proper has a population of about 1.4 million[6] while its metropolitan city has 3.26 million inhabitants.
-                    Its continuously built-up urban area, that stretches well beyond the boundaries of the administrative metropolitan city, is the fourth largest in the EU with 5.27 million inhabitants.<br>
-                     <a style="color:rgb(0, 78, 141);" href="https://en.wikipedia.org/wiki/Milan">Read more.</a>
-                
-                 </p>
-               </div>
-                <div style=" overflow: hidden;">
-                 <p style="color:rgb(0, 78, 141); font-size: larger;font-weight: bolder; padding-left: 5%;">
-                    PARIS
-                 </p>
-                 <p style="color: black;font-size: larger;padding-left: 5%;">
-                     Paris is the capital and most populous city of France, with an estimated population of 2,175,601 residents as of 2018, in an area of more than 105 square kilometres (41 square miles).
-                     Since the 17th century, Paris has been one of Europe's major centres of finance, diplomacy, commerce, fashion, gastronomy, science, and arts.
-                     The City of Paris is the centre and seat of government of the region and province of Île-de-France, or Paris Region, which has an estimated population of 12,174,880, or about 18 percent of the population of France as of 2017.<br>
-                    <a style="color:rgb(0, 78, 141);" href="https://en.wikipedia.org/wiki/Paris">Read more.</a>
-            
-                 </p>
-                
-                </div>
+            <ul class="blogul" id="flip" style="padding:none;" ><p style="margin: none;font-weight: bolder; color: rgb(77, 71, 71); ">Europe</p>
+                <li class="panel1">
+                    <div style=" overflow: hidden;">
+                        <p style="color:rgb(0, 78, 141); font-size: larger;font-weight: bolder; padding-left: 5%;">
+                           MILAN
+                        </p>
+                        <p style="color: black;font-size: larger;padding-left: 5%;">
+                           Milan is a city in northern Italy, capital of Lombardy, and the second-most populous city proper in Italy after Rome. 
+                           Milan served as the capital of the Western Roman Empire, the Duchy of Milan and the Kingdom of Lombardy–Venetia. 
+                           The city proper has a population of about 1.4 million[6] while its metropolitan city has 3.26 million inhabitants.
+                           Its continuously built-up urban area, that stretches well beyond the boundaries of the administrative metropolitan city, is the fourth largest in the EU with 5.27 million inhabitants.<br>
+                            <a style="color:rgb(0, 78, 141);" href="https://en.wikipedia.org/wiki/Milan">Read more.</a>
+                       
+                        </p>
+                    </div>
 
-                <div style=" overflow: hidden;">
-                    <p style="color:rgb(0, 78, 141); font-size: larger;font-weight: bolder; padding-left: 5%;">
-                       IBIZA
-                    </p>
-                    <p style="color: black;font-size: larger;padding-left: 5%;">
-                         Ibiza is a Spanish island in the Mediterranean Sea off the eastern coast of Spain. 
-                         It is 150 kilometres (93 miles) from the city of Valencia.
-                         It is the third largest of the Balearic Islands, an autonomous community of Spain. 
-                         Its largest settlements are Ibiza Town (Catalan: Vila d'Eivissa, or simply Vila), Santa Eulària des Riu, and Sant Antoni de Portmany. Its highest point, called Sa Talaiassa (or Sa Talaia), is 475 metres (1,558 feet) above sea level.<br>
-                       <a style="color:rgb(0, 78, 141);" href="https://en.wikipedia.org/wiki/Ibiza">Read more.</a>
-               
-                    </p>
+                </li>
+                <li class="panel1">
+                    <div style=" overflow: hidden;">
+                        <p style="color:rgb(0, 78, 141); font-size: larger;font-weight: bolder; padding-left: 5%;">
+                           PARIS
+                        </p>
+                        <p style="color: black;font-size: larger;padding-left: 5%;">
+                            Paris is the capital and most populous city of France, with an estimated population of 2,175,601 residents as of 2018, in an area of more than 105 square kilometres (41 square miles).
+                            Since the 17th century, Paris has been one of Europe's major centres of finance, diplomacy, commerce, fashion, gastronomy, science, and arts.
+                            The City of Paris is the centre and seat of government of the region and province of Île-de-France, or Paris Region, which has an estimated population of 12,174,880, or about 18 percent of the population of France as of 2017.<br>
+                           <a style="color:rgb(0, 78, 141);" href="https://en.wikipedia.org/wiki/Paris">Read more.</a>
                    
-                </div>
+                        </p>
+                       
+                       </div>
+
+                </li>
+                <li class="panel1">
+                    <div style=" overflow: hidden;">
+                        <p style="color:rgb(0, 78, 141); font-size: larger;font-weight: bolder; padding-left: 5%;">
+                           IBIZA
+                        </p>
+                        <p style="color: black;font-size: larger;padding-left: 5%;">
+                             Ibiza is a Spanish island in the Mediterranean Sea off the eastern coast of Spain. 
+                             It is 150 kilometres (93 miles) from the city of Valencia.
+                             It is the third largest of the Balearic Islands, an autonomous community of Spain. 
+                             Its largest settlements are Ibiza Town (Catalan: Vila d'Eivissa, or simply Vila), Santa Eulària des Riu, and Sant Antoni de Portmany. Its highest point, called Sa Talaiassa (or Sa Talaia), is 475 metres (1,558 feet) above sea level.<br>
+                           <a style="color:rgb(0, 78, 141);" href="https://en.wikipedia.org/wiki/Ibiza">Read more.</a>
+                   
+                        </p>
+                       
+                    </div>
+
+                </li>
+                <li class="panel1" id="novpostt">
+
+                </li>
+            </ul>
                 <div id="novpostt"></div>
                 <p style="color: black; font-size: larger;font-weight: bolder; padding-left: 5%;">
                     Share your topic here:
@@ -126,7 +158,7 @@
                 <p  style="font-size: larger;font-weight: bolder; padding-left: 5%;">Content</p>
                 <textarea placeholder="Your Blog here:" id="textareat" style=" width: 70%; margin-left: 5%;"></textarea>
                 <button class="blogbtn" type="button" onclick="myFunction('novpostt','naslovt','textareat')">Post</button>
-        </div>
+         </div>
  
         <div>
             <p id="sp" class="movies" style="overflow: hidden;">Sport</p>

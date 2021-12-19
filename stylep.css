@@ -354,3 +354,18 @@ details
     justify-content: center;
     align-items: center;
 }
+
+.panel1, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(153, 208, 253);
+    border: solid 1px #c3c3c3;
+}
+  
+.panel1 {
+   
+    display: none;
+}
+.blogul{
+    color: ivory;
+}
